@@ -146,7 +146,13 @@
     <script>
         function scrollToSection(sectionId) {
             const section = document.getElementById(sectionId);
-            section.scrollIntoView({ behavior: 'smooth' });
+            const headerHeight = document.querySelector('header').offsetHeight;
+            const offsetPosition = section.offsetTop - headerHeight;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth',
+            });
         }
 
         document.getElementById('contactForm').addEventListener('submit', function (e) {
