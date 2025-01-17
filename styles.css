@@ -128,13 +128,10 @@ section span {
 }
 
 .technology {
-    background-color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    font-size: 1em;
-    color: #555;
-    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    line-height: 1.8;
 }
 
 .technology:hover {
