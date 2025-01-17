@@ -61,16 +61,10 @@ h2 {
 }
 
 .services {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     gap: 20px;
-    align-items: center;
-    justify-items: center;
-}
-
-.services .service-card:nth-child(3) {
-    grid-column: span 2;
-    justify-self: center;
 }
 
 .service-card {
@@ -79,8 +73,9 @@ h2 {
     border-radius: 8px;
     padding: 20px;
     text-align: center;
-    width: 250px;
-    border: 2px solid #dfe6e9;
+    flex: 1 1 calc(33.33% - 40px);
+    /* Adjusts to three cards per row */
+    max-width: 300px;
 }
 
 .service-card h3 {
@@ -221,12 +216,9 @@ footer a:hover {
         margin: 0 10px;
     }
 
-    .services {
-        grid-template-columns: 1fr;
-    }
-
-    .services .service-card:nth-child(3) {
-        grid-column: auto;
+    .service-card {
+        flex: 1 1 calc(50% - 20px);
+        /* Two cards per row */
     }
 }
 
@@ -251,5 +243,10 @@ footer a:hover {
 
     h2 {
         font-size: 1.5em;
+    }
+
+    .service-card {
+        flex: 1 1 100%;
+        /* Single card per row */
     }
 }
