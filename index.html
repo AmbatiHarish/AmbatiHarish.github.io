@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Harish Ambati, Full-Stack Software Engineer with expertise in Java, Spring, JavaScript, Angular, React, and more.">
+    <meta name="description"
+        content="Portfolio of Harish Ambati, Full-Stack Software Engineer with expertise in Java, Spring, JavaScript, Angular, React, and more.">
     <title>Harish Ambati Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <h1>Harish Ambati</h1>
@@ -23,7 +26,9 @@
     <section id="about">
         <h2>About Me</h2>
         <p>
-            Hi, I’m Harish Ambati, a passionate Full-Stack Software Engineer with expertise in Java, Spring, ServiceNow, and front-end technologies like Angular and React. I specialize in developing efficient, scalable, and user-friendly solutions.
+            Hi, I’m Harish Ambati, a passionate Full-Stack Software Engineer with expertise in Java, Spring, ServiceNow,
+            and front-end technologies like Angular and React. I specialize in developing efficient, scalable, and
+            user-friendly solutions.
         </p>
     </section>
     <section id="services">
@@ -46,8 +51,10 @@
     <section id="projects">
         <h2>My Work</h2>
         <ul>
-            <li><strong>ServiceNow Workflow Automation:</strong> Streamlined workflows, reducing task resolution times by 30%.</li>
-            <li><strong>Cross-Platform App:</strong> Developed an app with React Native and Java, featuring offline functionality.</li>
+            <li><strong>ServiceNow Workflow Automation:</strong> Streamlined workflows, reducing task resolution times
+                by 30%.</li>
+            <li><strong>Cross-Platform App:</strong> Developed an app with React Native and Java, featuring offline
+                functionality.</li>
             <li><strong>API Security Tool:</strong> Built a security tool using GraphQL and React.</li>
         </ul>
     </section>
@@ -79,7 +86,8 @@
             </ul>
             <h3>Software Engineer, Saturam, Bangalore, India (Feb 2018 – May 2019)</h3>
             <ul>
-                <li>Played a crucial role in developing the vendor application "BELLY FULL" utilizing Python, PostgreSQL, and jQuery.</li>
+                <li>Played a crucial role in developing the vendor application "BELLY FULL" utilizing Python,
+                    PostgreSQL, and jQuery.</li>
                 <li>Implemented 35 APIs in the Flask framework, integrating UI with APIs seamlessly.</li>
                 <li>Optimized data retrieval with PostgreSQL queries, improving response times by 25%.</li>
                 <li>Executed 150+ test case scenarios and maintained comprehensive test documentation.</li>
@@ -88,9 +96,10 @@
     </section>
     <section id="contact">
         <h2>Get in Touch</h2>
-        <p><a href="https://linkedin.com/in/harish-ambati" target="_blank">LinkedIn</a> | <a href="mailto:tech.harish26@gmail.com">tech.harish26@gmail.com</a></p>
+        <p><a href="https://linkedin.com/in/harish-ambati" target="_blank">LinkedIn</a> | <a
+                href="mailto:tech.harish26@gmail.com">tech.harish26@gmail.com</a></p>
         <div class="contact-form">
-            <form action="#" method="post">
+            <form id="contactForm">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -112,6 +121,19 @@
             const section = document.getElementById(sectionId);
             section.scrollIntoView({ behavior: 'smooth' });
         }
+
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            const mailtoLink = `mailto:tech.harish26@gmail.com?subject=Message from ${name}&body=Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${message}`;
+
+            window.location.href = mailtoLink;
+        });
     </script>
 </body>
+
 </html>
