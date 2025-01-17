@@ -134,11 +134,6 @@ section span {
     line-height: 1.8;
 }
 
-.technology:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 /* Experience Section */
 .experience {
     text-align: left;
@@ -148,6 +143,8 @@ section span {
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    line-height: 1.8;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .experience h3 {
@@ -156,14 +153,41 @@ section span {
     margin-bottom: 10px;
 }
 
+.experience h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    background-color: #2980b9;
+    border-radius: 50%;
+}
+
 .experience ul {
     list-style: none;
     padding: 0;
+    margin: 20px 0;
 }
 
 .experience ul li {
-    margin-bottom: 10px;
-    line-height: 1.6;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #2980b9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experience ul li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.experience ul li p {
+    margin: 0;
+    font-size: 1em;
     color: #555;
 }
 
