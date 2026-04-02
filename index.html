@@ -1,177 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Portfolio of Harish Ambati, Full-Stack Software Engineer with expertise in Java, Spring, JavaScript, Angular, React, and more.">
-    <title>Harish Ambati Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harish Ambati | Full Stack Engineer</title>
+  <meta
+    name="description"
+    content="Portfolio website for Harish Ambati, Full Stack Engineer specializing in React, Java, Spring Boot, Angular, React Native, and modern web application development."
+  />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-    <header>
-        <h1>Harish Ambati</h1>
-        <p>Full-Stack Software Engineer | ServiceNow Enthusiast</p>
-        <nav>
-            <a onclick="scrollToSection('about')">Who I Am</a>
-            <a onclick="scrollToSection('services')">What I Do</a>
-            <a onclick="scrollToSection('technologies')">Technologies</a>
-            <a onclick="scrollToSection('projects')">My Work</a>
-            <a onclick="scrollToSection('experience')">Experience</a>
-            <a onclick="scrollToSection('certifications')">Certifications</a>
-            <a onclick="scrollToSection('contact')">Get in Touch</a>
-        </nav>
-    </header>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">Harish<span>Ambati</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="card hero-card">
+          <div class="eyebrow">Full Stack Engineer · React · Java · Spring Boot · Angular</div>
+          <h1>Creating scalable products with polished UI and strong engineering foundations.</h1>
+          <p class="lead">
+            I am Harish Ambati, a full stack engineer with 5 years of experience building enterprise-grade
+            and consumer-focused web applications. My core strength is combining modern frontend
+            development with reliable backend services, strong testing practices, and cloud-ready delivery
+            pipelines.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:tech.harish26@gmail.com">Email Me</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/harish-ambati" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn btn-secondary" href="#highlights">See Highlights</a>
+          </div>
+        </div>
+
+        <aside class="card side-card">
+          <div class="stat-grid">
+            <div class="stat">
+              <strong>5+ Years</strong>
+              <span class="muted">Full stack development and software quality experience</span>
+            </div>
+            <div class="stat">
+              <strong>React + Spring Boot</strong>
+              <span class="muted">Frontend interactivity backed by solid API design</span>
+            </div>
+            <div class="stat">
+              <strong>AWS + Docker + CI/CD</strong>
+              <span class="muted">Deployment, automation, and scalable delivery workflows</span>
+            </div>
+            <div class="stat">
+              <strong>Testing Mindset</strong>
+              <span class="muted">Selenium, Cypress, Katalon, Postman, ReadyAPI, JUnit</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
     <section id="about">
-        <h2>About Me</h2>
-        <p>
-            Hi, I’m Harish Ambati, a passionate Full-Stack Software Engineer with expertise in Java, Spring, ServiceNow,
-            and front-end technologies like Angular and React. I specialize in developing efficient, scalable, and
-            user-friendly solutions.
-        </p>
-    </section>
-    <section id="services">
-        <h2>What I Do</h2>
-        <div class="services">
-            <div class="service-card">
-                <h3>Web Development</h3>
-                <p>Creating responsive and user-friendly websites using modern frameworks like Angular and React.</p>
+      <div class="container grid-2">
+        <div class="card section-card">
+          <div class="section-head">
+            <div>
+              <h2>About Me</h2>
+              <p class="muted">Engineer focused on clean products, usability, and delivery quality</p>
             </div>
-            <div class="service-card">
-                <h3>API Development</h3>
-                <p>Building REST APIs with Java and Spring Boot for scalable backend systems.</p>
-            </div>
-            <div class="service-card">
-                <h3>DevOps & CI/CD</h3>
-                <p>Streamlining development workflows with tools like Jenkins, Docker, Kubernetes, and GitLab CI for
-                    efficient deployments and integration.</p>
-            </div>
-            <div class="service-card">
-                <h3>ServiceNow Solutions</h3>
-                <p>Implementing workflows and automations with ServiceNow CSA and CAD expertise.</p>
-            </div>
+          </div>
+          <p>
+            I build responsive web and mobile-friendly experiences using React, Angular, JavaScript, and
+            TypeScript, while also designing backend services with Java and Spring Boot. I enjoy turning
+            business requirements into intuitive interfaces and dependable APIs.
+          </p>
+          <p>
+            My background also includes automation, API testing, CI/CD, and cloud deployment, which helps
+            me contribute across the full product lifecycle from development to quality to release.
+          </p>
         </div>
+
+        <div class="card section-card" id="skills">
+          <div class="section-head">
+            <div>
+              <h2>Technical Skills</h2>
+              <p class="muted">A practical stack for modern product engineering</p>
+            </div>
+          </div>
+          <div class="chips">
+            <span class="chip">Java</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">Python</span>
+            <span class="chip">React</span>
+            <span class="chip">Angular / AngularJS</span>
+            <span class="chip">React Native</span>
+            <span class="chip">Spring / Spring Boot</span>
+            <span class="chip">Hibernate</span>
+            <span class="chip">GraphQL</span>
+            <span class="chip">HTML / CSS / SCSS</span>
+            <span class="chip">Bootstrap / MUI</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">PostgreSQL / MySQL / SQL</span>
+            <span class="chip">Firebase</span>
+            <span class="chip">AWS / Azure</span>
+            <span class="chip">Docker / Kubernetes / Terraform</span>
+            <span class="chip">Jenkins / GitLab CI</span>
+            <span class="chip">Selenium / Cypress / Jest</span>
+            <span class="chip">Katalon / Postman / ReadyAPI</span>
+          </div>
+        </div>
+      </div>
     </section>
-    <section id="technologies">
-        <h2>Technologies</h2>
-        <p class="technology">
-            <span style='color: #2980b9; font-weight: bold;'>Programming Languages:</span> Java, JavaScript, TypeScript,
-            Python, HTML, CSS, jQuery<br>
-            <span style='color: #2980b9; font-weight: bold;'>Databases:</span> MongoDB, PostgreSQL, MySQL, Firebase<br>
-            <span style='color: #2980b9; font-weight: bold;'>Deployment:</span> Microsoft Azure, AWS, GitLab CI,
-            Jenkins, Docker, Kubernetes, Terraform<br>
-            <span style='color: #2980b9; font-weight: bold;'>Tools:</span> Git, Eclipse, Visual Studio Code, JIRA,
-            Postman, JUnit, SonarQube, Excel<br>
-            <span style='color: #2980b9; font-weight: bold;'>Testing Tools:</span> Selenium, JUnit, Cypress, Jest<br>
-            <span style='color: #2980b9; font-weight: bold;'>Frameworks & Libraries:</span> Spring Boot, Angular, React,
-            React Native, Bootstrap, d3.js, Angular Material, React MUI
-        </p>
-    </section>
-    <section id="projects">
-        <h2>My Work</h2>
-        <p>
-            <span style='color: #2980b9; font-weight: bold;'>ServiceNow Workflow Automation:</span> Streamlined
-            workflows, reducing task resolution times by 30%.<br>
-            <span style='color: #2980b9; font-weight: bold;'>Cross-Platform App:</span> Developed an app with React
-            Native and Java, featuring offline functionality.<br>
-            <span style='color: #2980b9; font-weight: bold;'>API Security Tool:</span> Built a security tool using
-            GraphQL and React.
-        </p>
-    </section>
+
     <section id="experience">
-        <h2>Experience</h2>
-        <div class="experience">
-            <h3>Software Engineer, Designit, San Francisco, CA (Feb 2024 – Present)</h3>
-            <ul>
-                <li>Developed a cross-platform app with React and Java.</li>
-                <li>Integrated ArcGIS maps and Firebase for offline functionality.</li>
-                <li>Created 20+ APIs using Java and Spring Boot.</li>
-                <li>Improved testing efficiency with Selenium WebDriver automation.</li>
-                <li>Developed CI/CD pipelines with AWS CodePipeline and Jenkins.</li>
-            </ul>
-            <h3>Software Engineering Intern, Levo.ai, San Francisco, CA (Aug 2023 – Dec 2023)</h3>
-            <ul>
-                <li>Worked on API security using React and GraphQL.</li>
-                <li>Designed 20 APIs with Java and Spring Boot.</li>
-                <li>Implemented Docker and Kubernetes in CI/CD pipelines.</li>
-                <li>Automated testing workflows with JUnit and Cypress.</li>
-            </ul>
-            <h3>Software Engineer, Mindtree Ltd, Bangalore, India (Jun 2019 – Dec 2021)</h3>
-            <ul>
-                <li>Developed 13 REST APIs using Java, Spring Boot, and Hibernate.</li>
-                <li>Introduced drag-and-drop functionality and graph enhancements with d3js.</li>
-                <li>Migrated AngularJS projects to Angular 10 with a team of 4.</li>
-                <li>Enhanced development workflows with Jenkins and Sonar reports.</li>
-                <li>Wrote end-to-end Selenium tests for automated regression testing.</li>
-            </ul>
-            <h3>Software Engineer, Saturam, Bangalore, India (Feb 2018 – May 2019)</h3>
-            <ul>
-                <li>Played a crucial role in developing the vendor application "BELLY FULL" utilizing Python,
-                    PostgreSQL, and jQuery.</li>
-                <li>Implemented 35 APIs in the Flask framework, integrating UI with APIs seamlessly.</li>
-                <li>Optimized data retrieval with PostgreSQL queries, improving response times by 25%.</li>
-                <li>Executed 150+ test case scenarios and maintained comprehensive test documentation.</li>
-            </ul>
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Experience</h2>
+            <p class="muted">Recent roles across engineering, automation, and full-stack delivery</p>
+          </div>
         </div>
+
+        <div class="timeline">
+          <div class="card timeline-item">
+            <div class="timeline-meta">February 2025 – Present · Cincinnati, United States</div>
+            <h3>Senior Associate · Cognizant</h3>
+            <p>
+              Designed and executed manual and automated test cases, built UI automation with Katalon
+              Studio, validated REST APIs with Postman and ReadyAPI, supported Jenkins-based CI/CD
+              pipelines, collaborated in Agile teams, and documented testing workflows in qTest.
+            </p>
+          </div>
+
+          <div class="card timeline-item">
+            <div class="timeline-meta">July 2024 – February 2025 · Cincinnati, United States</div>
+            <h3>Full Stack Java Developer · RPA Technologies Inc.</h3>
+            <p>
+              Developed a cross-platform application using React and Java, implemented offline support with
+              Firebase, explored ArcGIS integration in React Native, designed 20+ Spring Boot CRUD APIs,
+              automated testing with Selenium WebDriver, and built CI/CD pipelines using AWS CodePipeline,
+              CodeBuild, and Jenkins.
+            </p>
+          </div>
+
+          <div class="card timeline-item">
+            <div class="timeline-meta">January 2024 – April 2024 · San Francisco, United States</div>
+            <h3>Software Engineering Intern · Levo.ai</h3>
+            <p>
+              Contributed to an API security platform using React and GraphQL, developed 20 Spring Boot
+              APIs, built custom filtering and sorting UI components, integrated Docker and Kubernetes into
+              GitLab CI pipelines, and strengthened regression coverage with JUnit and Cypress.
+            </p>
+          </div>
+
+          <div class="card timeline-item">
+            <div class="timeline-meta">June 2019 – December 2021 · Bangalore, India</div>
+            <h3>Software Engineer · Mindtree LTD</h3>
+            <p>
+              Built reusable UI functions and components, enhanced data visualization with D3.js, adapted
+              full websites with AngularJS and CSS, supported AngularJS to Angular 10 migration,
+              implemented Jenkins and Sonar reporting workflows, wrote Selenium regression coverage, and
+              mentored junior developers through code reviews.
+            </p>
+          </div>
+
+          <div class="card timeline-item">
+            <div class="timeline-meta">February 2019 – May 2019 · Bangalore, India</div>
+            <h3>Software Engineering Intern · Saturam</h3>
+            <p>
+              Helped develop the BELLY FULL vendor application using Python, Flask, PostgreSQL, and jQuery,
+              implemented 35 APIs, optimized data retrieval, and executed manual testing scenarios with
+              detailed documentation.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <p>
-            <span style='color: #2980b9; font-weight: bold;'>ServiceNow Certified System Administrator (CSA):</span>
-            Validated expertise in ServiceNow administration and workflows.<br>
-            <span style='color: #2980b9; font-weight: bold;'>ServiceNow Certified Application Developer (CAD):</span>
-            Demonstrated proficiency in creating custom applications on the ServiceNow platform.
-        </p>
+
+    <section id="highlights">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Career Highlights</h2>
+            <p class="muted">Strong points that make the portfolio stand out on GitHub Pages</p>
+          </div>
+        </div>
+
+        <div class="highlight-grid">
+          <article class="card highlight-card">
+            <div>
+              <h3>Cross-Platform Product Development</h3>
+              <p class="muted small">React · React Native · Java</p>
+              <ul>
+                <li>Built products compatible with Windows, macOS, and mobile devices.</li>
+                <li>Added offline capabilities with Firebase for better low-connectivity usage.</li>
+                <li>Explored ArcGIS integration to extend mapping and geospatial features.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card highlight-card">
+            <div>
+              <h3>API & Backend Engineering</h3>
+              <p class="muted small">Java · Spring Boot · GraphQL</p>
+              <ul>
+                <li>Designed and developed 20+ CRUD APIs using Java and Spring Boot.</li>
+                <li>Supported secure, scalable application workflows with strong OOP and design principles.</li>
+                <li>Integrated frontend applications with REST and GraphQL services.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card highlight-card">
+            <div>
+              <h3>Automation, Quality & Delivery</h3>
+              <p class="muted small">Selenium · Cypress · Jenkins · AWS</p>
+              <ul>
+                <li>Implemented automation across UI and API testing with modern QA tools.</li>
+                <li>Built CI/CD pipelines using Jenkins, GitLab CI, AWS CodePipeline, and CodeBuild.</li>
+                <li>Improved release reliability with testing, review, and deployment discipline.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
+
     <section id="contact">
-        <h2>Get in Touch</h2>
-        <p><a href="https://linkedin.com/in/harish-ambati" target="_blank">LinkedIn</a> | <a
-                href="mailto:tech.harish26@gmail.com">tech.harish26@gmail.com</a></p>
-        <div class="contact-form">
-            <form id="contactForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
+      <div class="container grid-2">
+        <div class="card section-card">
+          <h2>Contact</h2>
+          <p class="muted">Open to remote opportunities and strong engineering teams.</p>
+          <div class="contact-list">
+            <div class="contact-item"><strong>Email:</strong> <a href="mailto:tech.harish26@gmail.com">tech.harish26@gmail.com</a></div>
+            <div class="contact-item"><strong>Phone:</strong> <a href="tel:+19259146583">+1 925 914 6583</a></div>
+            <div class="contact-item"><strong>Location:</strong> Cincinnati, Ohio, United States</div>
+            <div class="contact-item"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/harish-ambati" target="_blank" rel="noreferrer">linkedin.com/in/harish-ambati</a></div>
+            <div class="contact-item"><strong>GitHub:</strong> <span class="muted">Add your GitHub profile and project links before publishing</span></div>
+          </div>
         </div>
+
+        <div class="card section-card">
+          <h2>Education</h2>
+          <div class="contact-list">
+            <div class="contact-item">
+              <strong>Master of Science in Computer Science</strong><br />
+              Missouri University of Science and Technology, Rolla<br />
+              GPA: 3.71
+            </div>
+            <div class="contact-item">
+              <strong>Bachelor of Engineering in Computer Science &amp; Engineering</strong><br />
+              New Horizon College of Engineering, Bangalore, India<br />
+              GPA: 9.38
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <footer>
-        &copy; 2025 Harish Ambati | <a href="mailto:tech.harish26@gmail.com">Email Me</a>
-    </footer>
-    <script>
-        function scrollToSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            const headerHeight = document.querySelector('header').offsetHeight;
-            const offsetPosition = section.offsetTop - headerHeight;
+  </main>
 
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth',
-            });
-        }
-
-        document.getElementById('contactForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-
-            const mailtoLink = `mailto:tech.harish26@gmail.com?subject=Message from ${name}&body=Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${message}`;
-
-            window.location.href = mailtoLink;
-        });
-    </script>
+  <footer class="footer">
+    <div class="container">
+      Built as a simple portfolio for GitHub Pages. Add your GitHub repo links, live demos, and resume PDF before publishing.
+    </div>
+  </footer>
 </body>
-
 </html>
