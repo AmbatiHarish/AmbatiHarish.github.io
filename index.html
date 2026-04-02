@@ -8,9 +8,15 @@
     name="description"
     content="Portfolio website for Harish Ambati, Full Stack Engineer specializing in React, Java, Spring Boot, Angular, React Native, and modern web application development."
   />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+
   <nav class="nav">
     <div class="container nav-inner">
       <a href="#top" class="brand">Harish<span>Ambati</span></a>
@@ -25,9 +31,9 @@
   </nav>
 
   <main id="top">
-    <section class="hero">
+    <section class="hero reveal">
       <div class="container hero-grid">
-        <div class="card hero-card">
+        <div class="card hero-card float-in delay-1">
           <div class="eyebrow">Full Stack Engineer · React · Java · Spring Boot · Angular</div>
           <h1>Creating scalable products with polished UI and strong engineering foundations.</h1>
           <p class="lead">
@@ -43,21 +49,21 @@
           </div>
         </div>
 
-        <aside class="card side-card">
+        <aside class="card side-card float-in delay-2">
           <div class="stat-grid">
-            <div class="stat">
+            <div class="stat glow-card">
               <strong>5+ Years</strong>
               <span class="muted">Full stack development and software quality experience</span>
             </div>
-            <div class="stat">
+            <div class="stat glow-card">
               <strong>React + Spring Boot</strong>
               <span class="muted">Frontend interactivity backed by solid API design</span>
             </div>
-            <div class="stat">
+            <div class="stat glow-card">
               <strong>AWS + Docker + CI/CD</strong>
               <span class="muted">Deployment, automation, and scalable delivery workflows</span>
             </div>
-            <div class="stat">
+            <div class="stat glow-card">
               <strong>Testing Mindset</strong>
               <span class="muted">Selenium, Cypress, Katalon, Postman, ReadyAPI, JUnit</span>
             </div>
@@ -66,9 +72,9 @@
       </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="reveal">
       <div class="container grid-2">
-        <div class="card section-card">
+        <div class="card section-card hover-lift">
           <div class="section-head">
             <div>
               <h2>About Me</h2>
@@ -86,7 +92,7 @@
           </p>
         </div>
 
-        <div class="card section-card" id="skills">
+        <div class="card section-card hover-lift" id="skills">
           <div class="section-head">
             <div>
               <h2>Technical Skills</h2>
@@ -119,7 +125,7 @@
       </div>
     </section>
 
-    <section id="experience">
+    <section id="experience" class="reveal">
       <div class="container">
         <div class="section-head">
           <div>
@@ -129,17 +135,17 @@
         </div>
 
         <div class="timeline">
-          <div class="card timeline-item">
+          <div class="card timeline-item hover-lift">
             <div class="timeline-meta">February 2025 – Present · Cincinnati, United States</div>
             <h3>Senior Associate · Cognizant</h3>
             <p>
-              Designed and executed manual and automated test cases, built UI automation with Katalon
-              Studio, validated REST APIs with Postman and ReadyAPI, supported Jenkins-based CI/CD
-              pipelines, collaborated in Agile teams, and documented testing workflows in qTest.
+              Designed and executed manual and automated test cases, built UI automation with Katalon Studio,
+              validated REST APIs with Postman and ReadyAPI, supported Jenkins-based CI/CD pipelines,
+              collaborated in Agile teams, and documented testing workflows in qTest.
             </p>
           </div>
 
-          <div class="card timeline-item">
+          <div class="card timeline-item hover-lift">
             <div class="timeline-meta">July 2024 – February 2025 · Cincinnati, United States</div>
             <h3>Full Stack Java Developer · RPA Technologies Inc.</h3>
             <p>
@@ -150,28 +156,28 @@
             </p>
           </div>
 
-          <div class="card timeline-item">
+          <div class="card timeline-item hover-lift">
             <div class="timeline-meta">January 2024 – April 2024 · San Francisco, United States</div>
             <h3>Software Engineering Intern · Levo.ai</h3>
             <p>
-              Contributed to an API security platform using React and GraphQL, developed 20 Spring Boot
-              APIs, built custom filtering and sorting UI components, integrated Docker and Kubernetes into
-              GitLab CI pipelines, and strengthened regression coverage with JUnit and Cypress.
+              Contributed to an API security platform using React and GraphQL, developed 20 Spring Boot APIs,
+              built custom filtering and sorting UI components, integrated Docker and Kubernetes into GitLab CI
+              pipelines, and strengthened regression coverage with JUnit and Cypress.
             </p>
           </div>
 
-          <div class="card timeline-item">
+          <div class="card timeline-item hover-lift">
             <div class="timeline-meta">June 2019 – December 2021 · Bangalore, India</div>
             <h3>Software Engineer · Mindtree LTD</h3>
             <p>
-              Built reusable UI functions and components, enhanced data visualization with D3.js, adapted
-              full websites with AngularJS and CSS, supported AngularJS to Angular 10 migration,
-              implemented Jenkins and Sonar reporting workflows, wrote Selenium regression coverage, and
-              mentored junior developers through code reviews.
+              Built reusable UI functions and components, enhanced data visualization with D3.js, adapted full
+              websites with AngularJS and CSS, supported AngularJS to Angular 10 migration, implemented Jenkins
+              and Sonar reporting workflows, wrote Selenium regression coverage, and mentored junior developers
+              through code reviews.
             </p>
           </div>
 
-          <div class="card timeline-item">
+          <div class="card timeline-item hover-lift">
             <div class="timeline-meta">February 2019 – May 2019 · Bangalore, India</div>
             <h3>Software Engineering Intern · Saturam</h3>
             <p>
@@ -184,7 +190,7 @@
       </div>
     </section>
 
-    <section id="highlights">
+    <section id="highlights" class="reveal">
       <div class="container">
         <div class="section-head">
           <div>
@@ -194,7 +200,7 @@
         </div>
 
         <div class="highlight-grid">
-          <article class="card highlight-card">
+          <article class="card highlight-card hover-lift">
             <div>
               <h3>Cross-Platform Product Development</h3>
               <p class="muted small">React · React Native · Java</p>
@@ -206,7 +212,7 @@
             </div>
           </article>
 
-          <article class="card highlight-card">
+          <article class="card highlight-card hover-lift">
             <div>
               <h3>API & Backend Engineering</h3>
               <p class="muted small">Java · Spring Boot · GraphQL</p>
@@ -218,7 +224,7 @@
             </div>
           </article>
 
-          <article class="card highlight-card">
+          <article class="card highlight-card hover-lift">
             <div>
               <h3>Automation, Quality & Delivery</h3>
               <p class="muted small">Selenium · Cypress · Jenkins · AWS</p>
@@ -233,9 +239,9 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="reveal">
       <div class="container grid-2">
-        <div class="card section-card">
+        <div class="card section-card hover-lift">
           <h2>Contact</h2>
           <p class="muted">Open to remote opportunities and strong engineering teams.</p>
           <div class="contact-list">
@@ -243,11 +249,10 @@
             <div class="contact-item"><strong>Phone:</strong> <a href="tel:+19259146583">+1 925 914 6583</a></div>
             <div class="contact-item"><strong>Location:</strong> Cincinnati, Ohio, United States</div>
             <div class="contact-item"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/harish-ambati" target="_blank" rel="noreferrer">linkedin.com/in/harish-ambati</a></div>
-            <div class="contact-item"><strong>GitHub:</strong> <span class="muted">Add your GitHub profile and project links before publishing</span></div>
           </div>
         </div>
 
-        <div class="card section-card">
+        <div class="card section-card hover-lift">
           <h2>Education</h2>
           <div class="contact-list">
             <div class="contact-item">
@@ -268,8 +273,20 @@
 
   <footer class="footer">
     <div class="container">
-      Built as a simple portfolio for GitHub Pages. Add your GitHub repo links, live demos, and resume PDF before publishing.
+      Built as a recruiter-friendly GitHub Pages portfolio. Add your GitHub repo links, live demos, and resume PDF before publishing.
     </div>
   </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+  </script>
 </body>
 </html>
